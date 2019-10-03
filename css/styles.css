@@ -1,0 +1,12 @@
+.container {
+	padding: 64px;
+    background-color: ghostwhite;
+}
+
+.rjs-highlight {
+	background-color: yellow;
+}
+
+.rjs-error {
+	color: red;
+}
