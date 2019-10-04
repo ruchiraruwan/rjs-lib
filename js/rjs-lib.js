@@ -9,7 +9,7 @@
  *              3. Password strength indicator
  *             
  *              All the functionalities can be integrated easily.
- * License: 
+ * License: MIT License
  */
 
  // RJS : Higlight search word in the current page 
@@ -28,10 +28,10 @@
 			previousSearchText = searchText;
 		} else {
 			// clear previous highlighted texts
-			replaceContent('<span class="rjs-highlight">'+previousSearchText+'</span>', previousSearchText);
+			replaceContent("<span class='rjs-highlight'>"+previousSearchText+"</span>", previousSearchText);
 			previousSearchText = searchText;
 		}
-		replaceContent(new RegExp(searchText, 'g'), function(){ foundCount += 1 ; return "<span class=\"rjs-highlight\">"+searchText+"</span>";});
+		replaceContent(new RegExp(searchText, 'g'), function(){ foundCount += 1 ; return "<span class='rjs-highlight'>"+searchText+"</span>";});
 		document.getElementById("rjs-search-result").innerHTML = "(Found: "+foundCount/2+")";
 	} else {
 		document.getElementById("rjs-search-result").innerHTML = "<span class='rjs-error'>Search text cannot be empty</span>";
