@@ -10,3 +10,21 @@
 .rjs-error {
 	color: red;
 }
+
+.live-demo {
+	background-color: gainsboro;
+    padding: 25px;
+    width: 435px;	
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #92aac3;
+    color: #fff;
+}
